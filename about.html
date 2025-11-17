@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Explore Nature</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: rgb(11, 11, 13);
+      color: #e0e0e0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      width: 92%;
+      height: 40px;
+      top: 0px;
+    }
+
+    .logo a{
+  text-decoration: none;
+  color: #fff;
+}
+    
+    .logo {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+    }
+    
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+nav a:hover {
+  color: #00ffff;
+}
+
+    section {
+      padding: 60px 10%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2.2em;
+      color: #00b4d8;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    section p {
+      color: #bbb;
+      line-height: 1.8;
+      font-size: 1.1em;
+      text-align: center;
+    }
+
+    .story, .mission, .team {
+      margin-top: 70px;
+    }
+
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .team-card {
+      background-color: #151515;
+      border-radius: 15px;
+      padding: 25px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 15px rgba(0, 180, 216, 0.4);
+    }
+
+    .team-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid #00b4d8;
+      margin-bottom: 15px;
+    }
+
+    .team-card h3 {
+      color: #00b4d8;
+      margin-bottom: 8px;
+    }
+
+    .team-card p {
+      color: #aaa;
+      font-size: 0.95em;
+    }
+
+    footer {
+      background-color: #111;
+      color: #bbb;
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid #222;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #00b4d8;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 40px 5%;
+      }
+      .team-card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="logo"><a href="ad.html">Legends of Aetheria</a></h1>
+    <nav>
+      <a href="ad.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="character.html">Characters</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="follow.html">Follow us</a>
+    </nav>
+  </header>
+
+  <section class="story">
+    <h2>Our Story</h2>
+    <p>“Explore Nature” was born out of a passion for adventure, technology, and creativity.
+      We aim to blend the love of nature with modern design — creating a digital space
+      that inspires people to explore the world around them. What started as a small student project
+      has grown into a vision for meaningful experiences.</p>
+  </section>
+
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>Our goal is to inspire a sense of wonder and responsibility for the environment.
+       Through our creative storytelling, visuals, and community engagement,
+       we hope to bring people closer to nature while empowering them through technology.</p>
+  </section>
+
+  <section class="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-container">
+      <div class="team-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="Team Member 1">
+        <h3>Aman Mishra</h3>
+        <p>Founder & Developer</p>
+      </div>
+      <div class="team-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="Team Member 2">
+        <h3>Ajay Sharma</h3>
+        <p>Mentor & Guide</p>
+      </div>
+      <div class="team-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="Team Member 3">
+        <h3>Team Explorer</h3>
+        <p>Design & Content</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Explore Nature | All Rights Reserved</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="follow.html">Follow Us</a> |
+      <a href="#">Contact</a>
+    </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Characters | Explore Nature</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      width: 92%;
+      height: 40px;
+      top: 0px;
+    }
+
+    .logo a{
+  text-decoration: none;
+  color: #fff;
+}
+    
+    .logo {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+    }
+    
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+nav a:hover {
+  color: #00ffff;
+}
+
+    section {
+      padding: 60px 10%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.2em;
+      color: #00b4d8;
+      margin-bottom: 15px;
+    }
+
+    section p {
+      color: #bbb;
+      margin-bottom: 40px;
+      font-size: 1.1em;
+    }
+
+    .character-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 35px;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .character-card {
+      background-color: #151515;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 180, 216, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .character-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(0, 180, 216, 0.4);
+    }
+
+    .character-card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .character-card h3 {
+      color: #00b4d8;
+      margin: 15px 0 8px;
+      font-size: 1.4em;
+    }
+
+    .character-card span {
+      display: inline-block;
+      background: #00b4d8;
+      color: #0a0a0a;
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 0.85em;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .character-card p {
+      color: #aaa;
+      font-size: 0.95em;
+      padding: 0 10px;
+    }
+
+    footer {
+      background-color: #111;
+      color: #bbb;
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid #222;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #00b4d8;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 40px 5%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="logo"><a href="ad.html">Legends of Aetheria</a></h1>
+    <nav>
+      <a href="ad.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="character.html">Characters</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="follow.html">Follow us</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Our Heroes</h2>
+    <p>Each hero represents a unique element of nature — Fire, Water, Wind, Earth, and more.
+       Discover their power, their story, and their connection to the world.</p>
+
+    <div class="character-grid">
+      <div class="character-card">
+        <img src="fifa alex.webp" alt="Alex">
+        <h3>Alex</h3>
+        <span>Fire Element</span>
+        <p>Liora is the fiery spirit of courage and leadership. Her flame burns brightest when the world faces its darkest times.</p>
+      </div>
+
+      <div class="character-card">
+        <img src="victor.jpg" alt="victor">
+        <h3>Victor</h3>
+        <span>Fire Element</span>
+        <p>Liora is the fiery spirit of courage and leadership. Her flame burns brightest when the world faces its darkest times.</p>
+      </div>
+
+      <div class="character-card">
+        <img src="spiderman.jpeg" alt="Liora">
+        <h3>Peter Parker</h3>
+        <span>Fire Element</span>
+        <p>Liora is the fiery spirit of courage and leadership. Her flame burns brightest when the world faces its darkest times.</p>
+      </div>
+
+      <div class="character-card">
+        <img src="kratos.jpg" alt="Liora">
+        <h3>Kratos</h3>
+        <span>Fire Element</span>
+        <p>Liora is the fiery spirit of courage and leadership. Her flame burns brightest when the world faces its darkest times.</p>
+      </div>
+
+      <div class="character-card">
+        <img src="Dlc.webp" alt="Kael">
+        <h3>DLC</h3>
+        <span>Water Element</span>
+        <p>Calm yet powerful, Kael’s control over water brings balance and serenity to the forces of nature.</p>
+      </div>
+
+      <div class="character-card">
+        <img src="king.jpg" alt="Aeria">
+        <h3>King</h3>
+        <span>Wind Element</span>
+        <p>Aeria moves like the breeze — unseen yet essential. Her whisper carries life across distant lands.</p>
+      </div>
+
+      <div class="character-card">
+        <img src="Michael-Concept-Art.avif" alt="Thorn">
+        <h3>Michael</h3>
+        <span>Earth Element</span>
+        <p>Strong and grounded, Thorn protects the balance of the world through resilience and wisdom.</p>
+      </div>
+
+      <div class="character-card">
+        <img src="residnet-evil-1.jpg" alt="Zeira">
+        <h3>Leaon</h3>
+        <span>Lightning Element</span>
+        <p>Fast as the storm and twice as fierce, Zeira channels lightning with unmatched precision and speed.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Explore Nature | All Rights Reserved</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="follow.html">Follow Us</a>
+    </p>
+  </footer>
+
+</body>
+</html>
