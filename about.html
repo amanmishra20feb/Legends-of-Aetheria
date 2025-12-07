@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Explore Nature</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0b0b0d;
+      color: #e0e0e0;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    body.light-mode {
+      background: #ffffff;
+      color: #222;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: rgba(0,0,0,0.6);
+      position: fixed;
+      width: 92%;
+      top: 0;
+    }
+
+    body.light-mode header {
+      background: #f2f2f2;
+    }
+
+    .logo a, nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    body.light-mode .logo a,
+    body.light-mode nav a {
+      color: #000;
+    }
+
+    nav a:hover { color: cyan; }
+
+    section { padding: 60px 10%; text-align: center; }
+
+    h2 { color: #00b4d8; }
+
+    .team-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+
+    .team-card {
+      background: #151515;
+      padding: 20px;
+      border-radius: 10px;
+      width: 230px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    body.light-mode .team-card { background: #f5f5f5; }
+
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid #00b4d8;
+    }
+
+    footer { text-align: center; padding: 30px; margin-top: 40px; }
+
+    #themeToggle {
+      cursor: pointer;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="logo"><a href="ad.html">Legends of Aetheria</a></h1>
+    <nav>
+      <a href="ad.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="character.html">Characters</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="follow.html">Follow us</a>
+      <button id="themeToggle" style="padding:6px 12px; border-radius:6px; cursor:pointer; border:none;">Toggle</button>
+    </nav>
+  </header>
+
+  <section class="story">
+    <h2>Our Story</h2>
+    <p>“Explore Nature” was born out of a passion for adventure, technology, and creativity.
+      We aim to blend the love of nature with modern design — creating a digital space
+      that inspires people to explore the world around them. What started as a small student project
+      has grown into a vision for meaningful experiences.</p>
+  </section>
+
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>Our goal is to inspire a sense of wonder and responsibility for the environment.
+       Through our creative storytelling, visuals, and community engagement,
+       we hope to bring people closer to nature while empowering them through technology.</p>
+  </section>
+
+  <section class="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-container">
+      <div class="team-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="Team Member 1">
+        <h3>Aman Mishra</h3>
+        <p>Founder & Developer</p>
+      </div>
+      <div class="team-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="Team Member 2">
+        <h3>Ajay Sharma</h3>
+        <p>Mentor & Guide</p>
+      </div>
+      <div class="team-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="Team Member 3">
+        <h3>Team Explorer</h3>
+        <p>Design & Content</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Explore Nature | All Rights Reserved</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="follow.html">Follow Us</a> |
+      <a href="#">Contact</a>
+    </p>
+  </footer>
+  <script>
+    const btn = document.getElementById('themeToggle');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+    });
+
+    if(localStorage.getItem('theme') === 'light'){
+      document.body.classList.add('light-mode');
+    }
+  </script>
+</body>
+</html>
